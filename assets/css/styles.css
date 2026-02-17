@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background-color: #f7e0da; /* beige */
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #d96c78;
+
+  padding: 2% 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+nav a{
+    margin-left: 8vw;
+}
+.hero {
+  position: relative;
+  margin-top: 40px; 
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wrapper {
+  position: relative;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOTÓN QUE GIRA */
+.rotating-button {
+  width: 100%;
+  animation: spin 20s linear infinite;
+}
+
+/* LOGO CENTRADO Y ESTÁTICO */
+.logo {
+  position: absolute;
+  width: 100%; /* ajusta tamaño */
+  pointer-events: none; /* evita problemas de hover */
+}
+
+/* Flores */
+.flower {
+  position: absolute;
+  width: 20vw;
+}
+
+/* Posiciones */
+.flower1 { top: 20%; left: 1%; }
+.flower2 { top: 10%; right: 1%; }
+.flower3 { bottom: 5%; left: 10%; }
+.flower4 { bottom: 10%; right: 5%; }
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+.main-button {
+  animation: spin 20s linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.flower {
+  animation: float 3s ease-in-out infinite;
+}
